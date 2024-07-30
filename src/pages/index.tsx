@@ -1,10 +1,8 @@
+import SignUp from './sign-up'
+import SignIn from './sign-in'
+import Main from './main'
+import Service from './service'
+import Home from './home'
+import Orders from './orders'
 
-const index = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default index
+export { SignUp, SignIn, Main, Service, Home, Orders}

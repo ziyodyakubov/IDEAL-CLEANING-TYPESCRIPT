@@ -1,10 +1,7 @@
+import LogOutModal from "./logout"
+import VerifyModal from "./verify"
+import SignInModal from "./signin"
+import ServiceEdit from "./edit-service"
+import ServiceModal from "./service"
 
-const index = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default index
+export {LogOutModal, VerifyModal, SignInModal, ServiceEdit, ServiceModal}
