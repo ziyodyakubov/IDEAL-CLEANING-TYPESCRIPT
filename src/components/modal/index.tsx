@@ -1,7 +1,6 @@
-import LogOutModal from "./logout"
-import VerifyModal from "./verify"
-import SignInModal from "./signin"
+// import VerifyModal from "./verify"
+// import SignInModal from "./signin"
 import ServiceEdit from "./edit-service"
 import ServiceModal from "./service"
 
-export {LogOutModal, VerifyModal, SignInModal, ServiceEdit, ServiceModal}
+export {ServiceEdit, ServiceModal}

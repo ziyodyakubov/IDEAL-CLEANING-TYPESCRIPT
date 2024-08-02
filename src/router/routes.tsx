@@ -2,14 +2,8 @@ import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
 import HomeIcon from '@mui/icons-material/Home';
 import BorderStyleIcon from '@mui/icons-material/BorderStyle';
 
-interface Route {
-    path: string;
-    content: string;
-    icon: React.ReactElement;
-}
 
-
-const routes: Route[] = [
+const routes = [
     {
         path: "/",
         content: "Main",

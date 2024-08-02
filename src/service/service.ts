@@ -1,10 +1,11 @@
+import { Service, ServiceFormValues, Params } from "../types/service"; 
 import http from "./config";
 
 const service = {
-  get: () => http.get("/service/all", { params: { page: 1, limit: 10 } }),
-  add: (data) => http.post("/service", data),
-  edit: (data) => http.put("/service", data),
-  delete: (id) => http.delete("/service", {params: {id}}),
+  get: (params: Params) => http.get<{ services: Service[], total: number }>("/service/all", { params }),
+  add: (data: ServiceFormValues) => http.post<Service>("/service", data),
+  edit: (data: ServiceFormValues) => http.put<Service>("/service", data),
+  delete: (id: string) => http.delete<void>("/service", { params: { id } }),
 };
 
 export default service;
